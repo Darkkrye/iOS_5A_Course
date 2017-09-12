@@ -20,6 +20,7 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        self.setTitle("Home")
     }
     
     override func willActivate() {
@@ -30,6 +31,10 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    @IBAction func nextButtonTapped() {
+        self.pushController(withName: "DetailController", context: ["label": "Mes détails"])
     }
 
     @IBAction func myButtonTapped() {

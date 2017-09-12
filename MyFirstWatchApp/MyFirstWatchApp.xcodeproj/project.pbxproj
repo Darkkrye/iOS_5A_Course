@@ -19,6 +19,8 @@
 		8FF0BF2D1F680DF200FB7FAA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0BF2C1F680DF200FB7FAA /* InterfaceController.swift */; };
 		8FF0BF2F1F680DF200FB7FAA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0BF2E1F680DF200FB7FAA /* ExtensionDelegate.swift */; };
 		8FF0BF311F680DF200FB7FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF0BF301F680DF200FB7FAA /* Assets.xcassets */; };
+		8FF0BF411F681F6A00FB7FAA /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0BF401F681F6A00FB7FAA /* DetailInterfaceController.swift */; };
+		8FF0BF431F682B9000FB7FAA /* NumberRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0BF421F682B9000FB7FAA /* NumberRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		8FF0BF2E1F680DF200FB7FAA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		8FF0BF301F680DF200FB7FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FF0BF321F680DF200FB7FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF0BF401F681F6A00FB7FAA /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		8FF0BF421F682B9000FB7FAA /* NumberRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				8FF0BF2E1F680DF200FB7FAA /* ExtensionDelegate.swift */,
 				8FF0BF301F680DF200FB7FAA /* Assets.xcassets */,
 				8FF0BF321F680DF200FB7FAA /* Info.plist */,
+				8FF0BF401F681F6A00FB7FAA /* DetailInterfaceController.swift */,
+				8FF0BF421F682B9000FB7FAA /* NumberRowController.swift */,
 			);
 			path = "MyFirstWatchApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -301,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF0BF411F681F6A00FB7FAA /* DetailInterfaceController.swift in Sources */,
+				8FF0BF431F682B9000FB7FAA /* NumberRowController.swift in Sources */,
 				8FF0BF2F1F680DF200FB7FAA /* ExtensionDelegate.swift in Sources */,
 				8FF0BF2D1F680DF200FB7FAA /* InterfaceController.swift in Sources */,
 			);

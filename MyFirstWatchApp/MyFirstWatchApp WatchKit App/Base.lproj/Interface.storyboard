@@ -20,6 +20,11 @@
                                 <action selector="myButtonTapped" destination="AgC-eL-Hgc" id="JOp-Hb-ara"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="NEXT" id="4dJ-ak-NxY">
+                            <connections>
+                                <action selector="nextButtonTapped" destination="AgC-eL-Hgc" id="3fC-Kk-zKA"/>
+                            </connections>
+                        </button>
                         <imageView alignment="left" image="apres" id="Sh2-UD-nxW"/>
                         <group width="1" alignment="left" id="fR5-lQ-rCA">
                             <items>
@@ -35,7 +40,36 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-52" y="3"/>
+            <point key="canvasLocation" x="-133" y="-51"/>
+        </scene>
+        <!--DetailController-->
+        <scene sceneID="tnZ-Gn-D6t">
+            <objects>
+                <controller identifier="DetailController" id="FCx-6S-HzE" customClass="DetailInterfaceController" customModule="MyFirstWatchApp_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="Ff1-gX-j9K"/>
+                        <table alignment="left" id="pVx-zK-Oui">
+                            <items>
+                                <tableRow identifier="MySuperRow" id="3I3-lD-etg" customClass="NumberRowController" customModule="MyFirstWatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="mMB-xJ-fQ8">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="1" textAlignment="center" id="AVP-Dd-1pt"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="numberLabel" destination="AVP-Dd-1pt" id="YOc-7H-YCS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="Ff1-gX-j9K" id="wLx-bn-7mX"/>
+                        <outlet property="numberTable" destination="pVx-zK-Oui" id="Dc0-Qn-ALa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="80" y="-82"/>
         </scene>
     </scenes>
 </document>
