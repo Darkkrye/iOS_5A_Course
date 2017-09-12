@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MyFirstWatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Hello, Watch !" textAlignment="center" id="Sbl-aD-Sv6"/>
+                        <button width="1" alignment="left" title="Button" id="8Gs-LS-z85">
+                            <connections>
+                                <action selector="myButtonTapped" destination="AgC-eL-Hgc" id="JOp-Hb-ara"/>
+                            </connections>
+                        </button>
+                        <imageView alignment="left" image="apres" id="Sh2-UD-nxW"/>
+                        <group width="1" alignment="left" id="fR5-lQ-rCA">
+                            <items>
+                                <label alignment="left" text="&lt;3" id="X88-Ep-SDK"/>
+                                <label alignment="center" text="LOVE" id="QOp-io-Hv2"/>
+                                <label alignment="right" text="&lt;3" id="Snk-Fv-ojZ"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="myButton" destination="8Gs-LS-z85" id="eYd-KF-z0B"/>
+                        <outlet property="myImage" destination="Sh2-UD-nxW" id="zmx-Ns-jsw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-52" y="3"/>
+        </scene>
+    </scenes>
+</document>
