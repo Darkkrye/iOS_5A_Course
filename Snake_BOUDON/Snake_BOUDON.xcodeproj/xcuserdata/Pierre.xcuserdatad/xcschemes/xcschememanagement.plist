@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WatchAppContext WatchKit App (Notification).xcscheme</key>
+		<key>Snake_BOUDON WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>2</integer>
 		</dict>
-		<key>WatchAppContext WatchKit App.xcscheme</key>
+		<key>Snake_BOUDON WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>1</integer>
 		</dict>
-		<key>WatchAppContext.xcscheme</key>
+		<key>Snake_BOUDON.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>

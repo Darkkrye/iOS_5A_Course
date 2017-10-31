@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WatchAppContext WatchKit App (Notification).xcscheme</key>
+		<key>UserInfoTransfer WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>6</integer>
 		</dict>
-		<key>WatchAppContext WatchKit App.xcscheme</key>
+		<key>UserInfoTransfer WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>5</integer>
 		</dict>
-		<key>WatchAppContext.xcscheme</key>
+		<key>UserInfoTransfer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 </dict>

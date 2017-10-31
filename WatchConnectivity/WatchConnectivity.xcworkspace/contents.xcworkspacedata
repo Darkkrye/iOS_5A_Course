@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Live/Live.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserInfoTransfer/UserInfoTransfer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WatchAppContext/WatchAppContext.xcodeproj">
    </FileRef>
 </Workspace>

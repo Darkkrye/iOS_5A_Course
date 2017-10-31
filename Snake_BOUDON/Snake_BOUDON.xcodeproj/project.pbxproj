@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FF1C3591FA8C7FF007F18DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C3581FA8C7FF007F18DE /* AppDelegate.swift */; };
+		8FF1C35B1FA8C7FF007F18DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C35A1FA8C7FF007F18DE /* ViewController.swift */; };
+		8FF1C35E1FA8C7FF007F18DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C35C1FA8C7FF007F18DE /* Main.storyboard */; };
+		8FF1C3601FA8C7FF007F18DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C35F1FA8C7FF007F18DE /* Assets.xcassets */; };
+		8FF1C3631FA8C7FF007F18DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C3611FA8C7FF007F18DE /* LaunchScreen.storyboard */; };
+		8FF1C3681FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8FF1C3671FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app */; };
+		8FF1C36E1FA8C7FF007F18DE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C36C1FA8C7FF007F18DE /* Interface.storyboard */; };
+		8FF1C3701FA8C7FF007F18DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C36F1FA8C7FF007F18DE /* Assets.xcassets */; };
+		8FF1C3771FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FF1C3761FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FF1C37C1FA8C7FF007F18DE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C37B1FA8C7FF007F18DE /* InterfaceController.swift */; };
+		8FF1C37E1FA8C7FF007F18DE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C37D1FA8C7FF007F18DE /* ExtensionDelegate.swift */; };
+		8FF1C3801FA8C7FF007F18DE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C37F1FA8C7FF007F18DE /* NotificationController.swift */; };
+		8FF1C3821FA8C7FF007F18DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF1C3811FA8C7FF007F18DE /* Assets.xcassets */; };
+		8FF1C3931FA8D0A1007F18DE /* DIRECTION.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C3921FA8D0A1007F18DE /* DIRECTION.swift */; };
+		8FF1C3951FA8D664007F18DE /* PreInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1C3941FA8D664007F18DE /* PreInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FF1C3691FA8C7FF007F18DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FF1C34D1FA8C7FF007F18DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FF1C3661FA8C7FF007F18DE;
+			remoteInfo = "Snake_BOUDON WatchKit App";
+		};
+		8FF1C3781FA8C7FF007F18DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FF1C34D1FA8C7FF007F18DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FF1C3751FA8C7FF007F18DE;
+			remoteInfo = "Snake_BOUDON WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FF1C38A1FA8C7FF007F18DE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FF1C3771FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF1C38E1FA8C7FF007F18DE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8FF1C3681FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FF1C3551FA8C7FF007F18DE /* Snake_BOUDON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake_BOUDON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF1C3581FA8C7FF007F18DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FF1C35A1FA8C7FF007F18DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FF1C35D1FA8C7FF007F18DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FF1C35F1FA8C7FF007F18DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FF1C3621FA8C7FF007F18DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FF1C3641FA8C7FF007F18DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF1C3671FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snake_BOUDON WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF1C36D1FA8C7FF007F18DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8FF1C36F1FA8C7FF007F18DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FF1C3711FA8C7FF007F18DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF1C3761FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Snake_BOUDON WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF1C37B1FA8C7FF007F18DE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8FF1C37D1FA8C7FF007F18DE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8FF1C37F1FA8C7FF007F18DE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8FF1C3811FA8C7FF007F18DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FF1C3831FA8C7FF007F18DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF1C3841FA8C7FF007F18DE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8FF1C3921FA8D0A1007F18DE /* DIRECTION.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIRECTION.swift; sourceTree = "<group>"; };
+		8FF1C3941FA8D664007F18DE /* PreInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FF1C3521FA8C7FF007F18DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF1C3731FA8C7FF007F18DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FF1C34C1FA8C7FF007F18DE = {
+			isa = PBXGroup;
+			children = (
+				8FF1C3571FA8C7FF007F18DE /* Snake_BOUDON */,
+				8FF1C36B1FA8C7FF007F18DE /* Snake_BOUDON WatchKit App */,
+				8FF1C37A1FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension */,
+				8FF1C3561FA8C7FF007F18DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FF1C3561FA8C7FF007F18DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FF1C3551FA8C7FF007F18DE /* Snake_BOUDON.app */,
+				8FF1C3671FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app */,
+				8FF1C3761FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FF1C3571FA8C7FF007F18DE /* Snake_BOUDON */ = {
+			isa = PBXGroup;
+			children = (
+				8FF1C3581FA8C7FF007F18DE /* AppDelegate.swift */,
+				8FF1C35A1FA8C7FF007F18DE /* ViewController.swift */,
+				8FF1C35C1FA8C7FF007F18DE /* Main.storyboard */,
+				8FF1C35F1FA8C7FF007F18DE /* Assets.xcassets */,
+				8FF1C3611FA8C7FF007F18DE /* LaunchScreen.storyboard */,
+				8FF1C3641FA8C7FF007F18DE /* Info.plist */,
+				8FF1C3921FA8D0A1007F18DE /* DIRECTION.swift */,
+			);
+			path = Snake_BOUDON;
+			sourceTree = "<group>";
+		};
+		8FF1C36B1FA8C7FF007F18DE /* Snake_BOUDON WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8FF1C36C1FA8C7FF007F18DE /* Interface.storyboard */,
+				8FF1C36F1FA8C7FF007F18DE /* Assets.xcassets */,
+				8FF1C3711FA8C7FF007F18DE /* Info.plist */,
+			);
+			path = "Snake_BOUDON WatchKit App";
+			sourceTree = "<group>";
+		};
+		8FF1C37A1FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FF1C3941FA8D664007F18DE /* PreInterfaceController.swift */,
+				8FF1C37B1FA8C7FF007F18DE /* InterfaceController.swift */,
+				8FF1C37D1FA8C7FF007F18DE /* ExtensionDelegate.swift */,
+				8FF1C37F1FA8C7FF007F18DE /* NotificationController.swift */,
+				8FF1C3811FA8C7FF007F18DE /* Assets.xcassets */,
+				8FF1C3831FA8C7FF007F18DE /* Info.plist */,
+				8FF1C3841FA8C7FF007F18DE /* PushNotificationPayload.apns */,
+			);
+			path = "Snake_BOUDON WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FF1C3541FA8C7FF007F18DE /* Snake_BOUDON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF1C38F1FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON" */;
+			buildPhases = (
+				8FF1C3511FA8C7FF007F18DE /* Sources */,
+				8FF1C3521FA8C7FF007F18DE /* Frameworks */,
+				8FF1C3531FA8C7FF007F18DE /* Resources */,
+				8FF1C38E1FA8C7FF007F18DE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FF1C36A1FA8C7FF007F18DE /* PBXTargetDependency */,
+			);
+			name = Snake_BOUDON;
+			productName = Snake_BOUDON;
+			productReference = 8FF1C3551FA8C7FF007F18DE /* Snake_BOUDON.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FF1C3661FA8C7FF007F18DE /* Snake_BOUDON WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF1C38B1FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON WatchKit App" */;
+			buildPhases = (
+				8FF1C3651FA8C7FF007F18DE /* Resources */,
+				8FF1C38A1FA8C7FF007F18DE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FF1C3791FA8C7FF007F18DE /* PBXTargetDependency */,
+			);
+			name = "Snake_BOUDON WatchKit App";
+			productName = "Snake_BOUDON WatchKit App";
+			productReference = 8FF1C3671FA8C7FF007F18DE /* Snake_BOUDON WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8FF1C3751FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF1C3871FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON WatchKit Extension" */;
+			buildPhases = (
+				8FF1C3721FA8C7FF007F18DE /* Sources */,
+				8FF1C3731FA8C7FF007F18DE /* Frameworks */,
+				8FF1C3741FA8C7FF007F18DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snake_BOUDON WatchKit Extension";
+			productName = "Snake_BOUDON WatchKit Extension";
+			productReference = 8FF1C3761FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FF1C34D1FA8C7FF007F18DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = boudonpierre;
+				TargetAttributes = {
+					8FF1C3541FA8C7FF007F18DE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8FF1C3661FA8C7FF007F18DE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8FF1C3751FA8C7FF007F18DE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8FF1C3501FA8C7FF007F18DE /* Build configuration list for PBXProject "Snake_BOUDON" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FF1C34C1FA8C7FF007F18DE;
+			productRefGroup = 8FF1C3561FA8C7FF007F18DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FF1C3541FA8C7FF007F18DE /* Snake_BOUDON */,
+				8FF1C3661FA8C7FF007F18DE /* Snake_BOUDON WatchKit App */,
+				8FF1C3751FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FF1C3531FA8C7FF007F18DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF1C3631FA8C7FF007F18DE /* LaunchScreen.storyboard in Resources */,
+				8FF1C3601FA8C7FF007F18DE /* Assets.xcassets in Resources */,
+				8FF1C35E1FA8C7FF007F18DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF1C3651FA8C7FF007F18DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF1C3701FA8C7FF007F18DE /* Assets.xcassets in Resources */,
+				8FF1C36E1FA8C7FF007F18DE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF1C3741FA8C7FF007F18DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF1C3821FA8C7FF007F18DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FF1C3511FA8C7FF007F18DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF1C35B1FA8C7FF007F18DE /* ViewController.swift in Sources */,
+				8FF1C3931FA8D0A1007F18DE /* DIRECTION.swift in Sources */,
+				8FF1C3591FA8C7FF007F18DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF1C3721FA8C7FF007F18DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF1C3801FA8C7FF007F18DE /* NotificationController.swift in Sources */,
+				8FF1C37E1FA8C7FF007F18DE /* ExtensionDelegate.swift in Sources */,
+				8FF1C37C1FA8C7FF007F18DE /* InterfaceController.swift in Sources */,
+				8FF1C3951FA8D664007F18DE /* PreInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FF1C36A1FA8C7FF007F18DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FF1C3661FA8C7FF007F18DE /* Snake_BOUDON WatchKit App */;
+			targetProxy = 8FF1C3691FA8C7FF007F18DE /* PBXContainerItemProxy */;
+		};
+		8FF1C3791FA8C7FF007F18DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FF1C3751FA8C7FF007F18DE /* Snake_BOUDON WatchKit Extension */;
+			targetProxy = 8FF1C3781FA8C7FF007F18DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FF1C35C1FA8C7FF007F18DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF1C35D1FA8C7FF007F18DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FF1C3611FA8C7FF007F18DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF1C3621FA8C7FF007F18DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FF1C36C1FA8C7FF007F18DE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF1C36D1FA8C7FF007F18DE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FF1C3851FA8C7FF007F18DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FF1C3861FA8C7FF007F18DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FF1C3881FA8C7FF007F18DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				INFOPLIST_FILE = "Snake_BOUDON WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		8FF1C3891FA8C7FF007F18DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				INFOPLIST_FILE = "Snake_BOUDON WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		8FF1C38C1FA8C7FF007F18DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				IBSC_MODULE = Snake_BOUDON_WatchKit_Extension;
+				INFOPLIST_FILE = "Snake_BOUDON WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		8FF1C38D1FA8C7FF007F18DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				IBSC_MODULE = Snake_BOUDON_WatchKit_Extension;
+				INFOPLIST_FILE = "Snake_BOUDON WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		8FF1C3901FA8C7FF007F18DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				INFOPLIST_FILE = Snake_BOUDON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FF1C3911FA8C7FF007F18DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63ZVUM2RC3;
+				INFOPLIST_FILE = Snake_BOUDON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudonpierre.Snake-BOUDON";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FF1C3501FA8C7FF007F18DE /* Build configuration list for PBXProject "Snake_BOUDON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF1C3851FA8C7FF007F18DE /* Debug */,
+				8FF1C3861FA8C7FF007F18DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF1C3871FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF1C3881FA8C7FF007F18DE /* Debug */,
+				8FF1C3891FA8C7FF007F18DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF1C38B1FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF1C38C1FA8C7FF007F18DE /* Debug */,
+				8FF1C38D1FA8C7FF007F18DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF1C38F1FA8C7FF007F18DE /* Build configuration list for PBXNativeTarget "Snake_BOUDON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF1C3901FA8C7FF007F18DE /* Debug */,
+				8FF1C3911FA8C7FF007F18DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FF1C34D1FA8C7FF007F18DE /* Project object */;
+}
